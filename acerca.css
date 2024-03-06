@@ -1,0 +1,299 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+
+html{
+    font-family: "DM Sans", sans-serif;
+}
+
+header{
+    display: flex;
+    width: 100%;
+    height: 15vh;
+    align-items: center;
+}
+
+.header__titleContainer{
+    display: flex;
+    width: 50%;
+    padding-left: 60px;
+}
+
+nav{
+    display: flex;
+    width: 50%;
+    justify-content: end;
+    padding-right: 60px;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    color: rgb(59, 59, 189);
+}
+
+main{
+    width: 100%;
+    height: auto;
+}
+
+.main-title{
+    display: flex;
+    justify-content: center;
+    color: rgb(59, 59, 189);
+    margin-bottom: 30px;
+}
+
+.main-container{
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.introduction-container{
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+}
+
+.introduction-container figure{
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.introduction-container img{
+    width: 310px;
+    height: 260px;
+    border-radius: 15px;
+}
+
+.intruction__text{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    text-align: justify;
+    padding-top: 15px;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.academy-container{
+    display: flex;
+    padding: 20px 0;
+    gap: 25px;
+    margin-bottom: 40px;
+    justify-content: center;
+}
+
+.academy-title{
+    display: flex;
+    justify-content: center;
+    color: rgb(59, 59, 189);
+    margin-bottom: 30px;
+}
+
+.academy__card{
+    min-width: 300px;
+    width: 400px;
+    height: 290px;
+    border: solid 2px #CCCCCC;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+}
+
+.academy__card-figure{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.upb{
+    min-width: 280px;
+    width: 320px;
+    height: 120px;
+}
+
+.eafit{
+    width: 320px;
+}
+
+.academy__card-title{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.academy-container ul{
+    list-style: none;
+    line-height: 25px;
+}
+
+.experience-container{
+    display: flex;
+    padding: 20px 0;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.experience-title{
+    display: flex;
+    justify-content: center;
+    color: rgb(59, 59, 189);
+    margin-bottom: 30px;
+}
+
+.experience__card{
+    flex: 0 0 auto;
+    width: 300px;
+    height: 290px;
+    border: solid 2px #CCCCCC;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+}
+
+.experience__card-figure{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heligolfo{
+    width: 260px;
+    border-radius: 8px;
+}
+
+.iqor{
+    width: 260px;
+}
+
+.avianca{
+    width: 260px;
+}
+
+.experience__card-title{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.experience-container ul{
+    list-style: none;
+    line-height: 25px;
+}
+
+footer{
+    display: flex;
+    width: 100%;
+    height: 13vh;
+    background-color: #F3F3F3;
+}
+
+.footer__leftSection{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 60px;
+    font-weight: 700;
+}
+
+.footer__rightSection{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    align-items: center;
+    justify-content: end;
+    padding-right: 80px;
+}
+
+.footer__rightSection ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    text-decoration: none;
+}
+
+.footer__rightSection ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.fa-brands{
+    font-size: 24px;
+}
+
+@media (max-width: 1200px){
+    .header__titleContainer{
+        display: none;
+    }
+    nav{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        padding: 0;
+    }
+    .main-container{
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+    }
+    .introduction-container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        margin-bottom: 50px;
+        align-items: center;
+    }
+    .intruction__text{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        text-align: justify;
+        padding-top: 15px;
+        font-size: 18px;
+        line-height: 30px;
+        
+    }
+    .academy-container, .experience-container{
+        scroll-snap-type: x proximity;
+        overflow-x: auto;
+        overscroll-behavior-x: contain;
+        padding-left: 20px; 
+        padding-right: 20px; 
+    }
+
+    .academy__card{
+        width: 300px;
+    }
+    .academy-container{
+        justify-content: flex-start;
+    }
+
+    .academy__card, .experience__card{
+        scroll-snap-align: center;
+    }
+
+}
